@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>first assignment</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/responsive.css">
+    </head>
+    <body>
+
+        <script>
+            let email="";
+            let name="";
+            let surname="";
+            let comment="";
+
+            function addComent(){
+                email=document.getElementById("email").value;
+                name=document.getElementById("name").value;
+                surname=document.getElementById("surname").value;
+                comment=document.getElementById("comment").value;
+
+                alert("name: " + name +"\nsurname: " +surname + "\nemail: " + email+ "\ncomment: " + comment);
+                document.getElementById("email").value = "";
+                document.getElementById("name").value = "";
+                document.getElementById("surname").value = "";
+                document.getElementById("comment").value = "";
+            }
+        </script>
+        <!-- header-->
+    <div class="container">
+        <header class="header">
+
+            <div class="logo">
+                <a href="index.html"><h1>Notice me Senpai</h1> <img src="images/download.jpg" alt=""></a>
+            </div>
+                        <div class="search-bar">
+                            <form class="search-form">
+                                <input type="text" class="search-bar-details" placeholder="Search Out Website...">
+                                <div class="search-button">search</div>
+                            </form>
+                        </div>
+                        <nav class="navigation">
+                            <ul class="menu">
+                                <li class="menu-item">
+                                   <a href="index.html" class="menu-link">home</a> 
+                                </li>
+                                <li class="menu-item">
+                                    <a href="gallery.html" class="menu-link">Gallery</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="contactUs.html" class="menu-link">contact Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="aboutUs.html" class="menu-link">about Us</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="animeList.html" class="menu-link">Anime List</a>
+                                </li>
+                            </ul>
+                        </nav>
+        </header>
+    </div>
+
+<section class="contact">
+    <div class="container">
+        <div class="contact-elements">
+            <div class="contact-element">
+                <h3> Please fill fields below to contact Us</h3>
+                <form>
+                    <div class="input-details">
+                        <label for="e-mail">E-mail</label>
+                        <input type="text" id="email" placeholder="e-mail" class="contact-email">
+                    </div>
+                    <div class="input-details">
+                        <label for="name">Name</label>
+                        <input type="text"  id="name" placeholder="Name" class="contact-name">
+                    </div>
+                    <div class="input-details">
+                        <label for="Surname">Surname</label>
+                        <input type ="text" id ="surname" placeholder="Surname" class="contact-surname">
+                    </div>
+                    <div class="input-details">
+                        <label for="Comment" >Comment</label>
+                        <input type="text"  id="comment" placeholder="Comment" class="contact-comment">
+                    </div>
+                    
+                    <div  class="contact-submit" onclick="addComent()" >Submit</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-elements">
+            <div class="footer-element">
+                <div class="footer-element--title">contact details</div>
+                <p class="footer-element--text-1">company name</p>
+                <p class="footer-element--text-1">street name & number</p>
+                <p class="footer-element--text-1">town</p>
+                <p class="footer-element--text-1">fostcode/zip</p>
+                <p class="footer-element--text-1 tel">tel:xxxxx xxxxxxxxxx</p>
+                <p class="footer-element--text-1">fax:xxxxx xxxxxxxxxx</p>
+                <p class="footer-element--text-1">email: <a href="#" class="footer-mail">contact@mydomain.com</a></p>
+            </div>
+            <div class="footer-element">
+                <div class="footer-element--title links-tittle">quick links</div>
+                <ul class="footer-links">
+                    <a href="index.html"><li class ="footer-link">home</li></a>
+                    <a href="gallery.html"><li class ="footer-link">Gallery</li></a>
+                    <a href="contactUs.html"><li class ="footer-link">Contact Us</li></a>
+                    <a href="aboutUs.html"><li class ="footer-link">About Us</li></a>
+                    <a href="animeList.html"><li class ="footer-link">Anime List</li></a>
+
+                </ul>
+            </div>
+            <div class="footer-element">
+                <div class="footer-element--title">from the blog</div>
+                <h4 class="footer-element--subtitle">blog post title</h4>
+                <p class="footer-element--text-2"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+                <div class="footer-element--read-more">read more »</div>
+            </div>
+
+            <div class="footer-element">
+                <div class="footer-element--title form-tittle">newsletter</div>
+
+                <form>
+                    <input type="text" placeholder="Name" class="footer-input">
+                    <input type="email" placeholder="Email" class="footer-input">
+                    <div class="footer-element--submit">submit</div>
+                </form>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- copyright-->
+<section  class="copyright">
+    <div class="container">
+        <div class="copyright-items">
+            <div class="copyright-item-1">Copyright © 2013 Domain Name - All Rights Reserved</div>
+            <div class="copyright-item-2">Template by OS Template</div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
